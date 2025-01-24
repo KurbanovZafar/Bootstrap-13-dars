@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="row my-5">
+        <div class="col-md-12">
+            <div class="card">
+                <div class="card-header">
+                    <h4 class="mb-0" id="xodim">Menejer: <span id="xodim"></span></h4>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="payUser">To'lovchi</label>
+                                <input type="text" class="form-control" id="payUser">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="payUserId">To'lovchi hisob raqami</label>
+                                <input type="text" class="form-control" id="payUserId">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="payOrder">Chek raqami</label>
+                                <input type="text" class="form-control" id="payOrder">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="paySum">To'lov summasi</label>
+                                <input type="text" class="form-control" id="paySum">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="payTarget">To'lov maqsadi</label>
+                                <input type="text" class="form-control" id="payTarget">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="payType">To'lov turi</label>
+                                <select name="payType" class="form-control" id="payType">
+                                    <option value="cash">Naqd</option>
+                                    <option value="card">Plastik karta</option>
+                                    <option value="Transit">Pul o'tkazish</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="payDate">To'lov sanasi</label>
+                                <input type="date" class="form-control" id="payDate">
+                            </div>
+                        </div>
+                        <div class="col-md-4 pt-4">
+                            <div class="form-group">
+                                <button type="button" class="btn btn-success mt-2" id="addPay">Qo'shish</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <table class="table table-striped table-bordered">
+                        <tr>
+                            <th>№</th>
+                            <th>F.I.Sh</th>
+                            <th>To'lov summasi</th>
+                            <th>Chek raqami</th>
+                            <th>To'lov maqasadi</th>
+                            <th>To'lov sanasi</th>
+                            <th>Amallar</th>
+                        </tr>
+                        <tbody id="tbody">
+                            
+                        </tbody>                     
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>  
+
+<script src="js/jQuery.min.js"></script>
+<script src="js/src/popover.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
